@@ -11,6 +11,10 @@ opts = OptionParser.new do |opts|
     puts opts
     exit
   end
+
+  opts.on("--operation OP", [:add, :sub], "add or subtract") do |op|
+    options[:op] = op
+  end
 end
 
 opts.parse!
