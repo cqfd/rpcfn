@@ -22,3 +22,6 @@ opts = OptionParser.new do |opts|
 end
 
 opts.parse!
+
+p options 
+p ARGV
