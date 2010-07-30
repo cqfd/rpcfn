@@ -1,0 +1,16 @@
+#! usr/bin/env ruby
+
+require 'optparse'
+
+options = {}
+
+opts = OptionParser.new do |opts|
+  opts.banner = "Usage: shift_subtitle [OPTIONS] input-file output-file"
+
+  opts.on("-h", "--help", "Shows this message") do
+    puts opts
+    exit
+  end
+end
+
+opts.parse!
