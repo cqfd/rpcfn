@@ -15,6 +15,10 @@ opts = OptionParser.new do |opts|
   opts.on("--operation OP", [:add, :sub], "add or subtract") do |op|
     options[:op] = op
   end
+
+  opts.on("--time MILISECONDS", "number of miliseconds to shift SRT entries") do |m|
+    options[:miliseconds] = m
+  end
 end
 
 opts.parse!
